@@ -68,7 +68,7 @@ n'est qu'un moyen parmis beaucoup d'autres.
 
 ## Fonctionnalités attendues / checklist
 
-- [ ] La page a un titre
+- [x] La page a un titre
 - [ ] La page a un pied de page, avec au moins un lien vers le dépôt de code
 - [ ] Le titre de l'APOD est présent
 - [ ] La date de l'APOD est présente
