@@ -1,0 +1,45 @@
+body{
+  font: 1.2rem "Fira Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+p{
+    text-align: center;
+}
+
+span{
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.upper_infos{
+    text-align: center;
+    display: grid;
+}
+.image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#image{
+    height: 500px;
+}
+
+.direction {
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    border: 0px;
+}
+
+#previous{
+    transform: rotate(-180deg);
+}

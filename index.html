@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="main_title">Kata-APOD</title>
+</head>
+<body onload="selected_image()">
+    <div class="title">
+        <h1>Kata-APOD</h1>
+        <h4>By @XPL0Z</h4>
+    </div>
+    <div class="links">
+        <a href="https://github.com/XPL0Z">My Github</a>
+        <a href="https://github.com/epfl-dojo/kata-APOD">Original REPO</a>
+    </div>
+
+    <div class="upper_infos">
+        <span class="info" id="title"></span>
+        <span class="info" id="name"></span>
+        <span class="info" id="date"></span>
+    </div>
+    
+    
+    <div class="image">
+        
+        <button class="direction" id="previous"> <img src="src/arrow.svg" alt="previous"></button>
+        <img id="image" src="" alt="">
+        <button class="direction" id="next"><img src="src/arrow.svg" alt="next"></button>
+        
+    </div>
+
+    <div class="bottom_infos">
+        <p class="info" id="image_text"></p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
