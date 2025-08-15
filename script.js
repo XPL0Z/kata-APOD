@@ -14,15 +14,17 @@ const urlParams = new URLSearchParams(window.location.search);
 
 let params = urlParams.get("DATE");
 
-const today_date = new Date()
+const today_date = new Date();
 
-today_date.toISOString().split('T')[0]
 
 async function selected_image() {
   if (!params){
-    console.log(today_date)
-    params =today_date
+    
+    params =today_date.toISOString().split('T')[0];;
+     
   }
+
+  console.log("ICI")
   console.log(params)
 
   const reponse = await fetch(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${params}`);
