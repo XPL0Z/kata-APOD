@@ -14,25 +14,32 @@ const urlParams = new URLSearchParams(window.location.search);
 
 let params = urlParams.get("DATE");
 
-const today_date = new Date().toISOString().split('T')[0];
+const today_date = new Date();
 
+const today_date_ISO = today_date.toISOString().split('T')[0];
+
+const btn_previous = document.getElementById("previous");
 
 async function selected_image() {
   if (!params){
     
-    params =today_date;
+    params = today_date_ISO;
      
-  }
+  }  
 
   console.log("ICI")
+  
   console.log(params)
 
   const reponse = await fetch(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${params}`);
   
   const infos = await reponse.json();
   
+  if (infos.media_type === "video"){
+    alert("OH débile c'est une vidéo");
+  }
   if (infos.copyright === undefined){
-    console.log("any author")
+    console.log("any author");
   } else {
     author.textContent = "Author : " +   infos.copyright;
   }
@@ -47,10 +54,23 @@ async function selected_image() {
   main_title.textContent = "KATA-APOD " + infos.date;
 
   console.log(infos);
+  
   console.log(urlParams.get("DATE")); 
 
 }
 
 
-const btn_previous = document.getElementById("previous");
-btn_previous.onclick = function() {alert('Clicked!');};
+btn_previous.onclick = function() {
+  
+  alert('Clicked!');
+
+  
+  if (!urlParams.get("DATE")){
+    today_date.setDate(today_date.getDate() - 1);
+    window.location.replace(`?DATE=${today_date.toISOString().split('T')[0]}`);
+  }else{ 
+    console.log(params.setDate(params.getDate()-1));
+  }
+  
+
+};
