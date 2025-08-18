@@ -14,13 +14,13 @@ const urlParams = new URLSearchParams(window.location.search);
 
 let params = urlParams.get("DATE");
 
-const today_date = new Date();
+const today_date = new Date().toISOString().split('T')[0];
 
 
 async function selected_image() {
   if (!params){
     
-    params =today_date.toISOString().split('T')[0];;
+    params =today_date;
      
   }
 
