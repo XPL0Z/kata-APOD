@@ -74,9 +74,9 @@ n'est qu'un moyen parmis beaucoup d'autres.
 - [x] La date de l'APOD est présente
 - [x] La description de l'APOD est présente
 - [x] Le copyright de l'APOD est présent ([info](https://github.com/nasa/apod-api#copyright))
-- [ ] Le média est affiché. Il peut s'agir :
+- [x] Le média est affiché. Il peut s'agir :
   - [x] D'une image, qui offrira un lien vers sa version HD
-  - [ ] D'une vidéo, qui offrira un player pour la visionner
+  - [x] D'une vidéo, qui offrira un player pour la visionner
 - [ ] Des boutons suivant et précédent sont présents
    - [ ] Le bouton précédent est un lien vers l'image du jour précédent
    - [ ] Le bouton suivant est un lien vers l'image du lendemain, mais n'est pas  

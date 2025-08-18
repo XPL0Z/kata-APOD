@@ -31,13 +31,10 @@ async function selected_image() {
   
   console.log(params)
 
-  const reponse = await fetch(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${params}`);
+  const reponse = await fetch(`https://api.nasa.gov/planetary/apod?api_key=bbckooccBbqkgef4WgsbRLwl43J0RpYTXFAbHRjS&date=${params}`);
   
   const infos = await reponse.json();
   
-  if (infos.media_type === "video"){
-    alert("OH débile c'est une vidéo");
-  }
   if (infos.copyright === undefined){
     console.log("any author");
   } else {
@@ -48,7 +45,11 @@ async function selected_image() {
   date.textContent = infos.date;
   
   title.textContent = infos.title;
-
+    if (infos.media_type === "video") {
+    video.src = infos.url;
+  }else{
+    image.src = infos.hdurl;
+  }
   image_text.textContent = infos.explanation;
 
   main_title.textContent = "KATA-APOD " + infos.date;
@@ -61,15 +62,22 @@ async function selected_image() {
 
 
 btn_previous.onclick = function() {
-  
-  alert('Clicked!');
 
   
   if (!urlParams.get("DATE")){
+    
     today_date.setDate(today_date.getDate() - 1);
+    
+    console.log(today_date.setDate(today_date.getDate() - 1));
+    
     window.location.replace(`?DATE=${today_date.toISOString().split('T')[0]}`);
-  }else{ 
-    console.log(params.setDate(params.getDate()-1));
+
+  }else {
+    alert("test")
+    //console.log(today_date.setDate(today_date.getDate() - 1));
+    //console.log(today_date.setDate(today_date.getDate() - 1).toISOString().split('T')[0]);
+    //console.log("ICI " + params.setDate(params.getDate()-1));
+  
   }
   
 
