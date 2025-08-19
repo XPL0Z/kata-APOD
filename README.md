@@ -68,15 +68,15 @@ n'est qu'un moyen parmis beaucoup d'autres.
 
 ## Fonctionnalités attendues / checklist
 
-- [x] La page a un titre
-- [x] La page a un pied de page, avec au moins un lien vers le dépôt de code
-- [x] Le titre de l'APOD est présent
-- [x] La date de l'APOD est présente
-- [x] La description de l'APOD est présente
-- [x] Le copyright de l'APOD est présent ([info](https://github.com/nasa/apod-api#copyright))
-- [x] Le média est affiché. Il peut s'agir :
-  - [x] D'une image, qui offrira un lien vers sa version HD
-  - [x] D'une vidéo, qui offrira un player pour la visionner
+- [ ] La page a un titre
+- [ ] La page a un pied de page, avec au moins un lien vers le dépôt de code
+- [ ] Le titre de l'APOD est présent
+- [ ] La date de l'APOD est présente
+- [ ] La description de l'APOD est présente
+- [ ] Le copyright de l'APOD est présent ([info](https://github.com/nasa/apod-api#copyright))
+- [ ] Le média est affiché. Il peut s'agir :
+  - [ ] D'une image, qui offrira un lien vers sa version HD
+  - [ ] D'une vidéo, qui offrira un player pour la visionner
 - [ ] Des boutons suivant et précédent sont présents
    - [ ] Le bouton précédent est un lien vers l'image du jour précédent
    - [ ] Le bouton suivant est un lien vers l'image du lendemain, mais n'est pas  
@@ -84,7 +84,7 @@ n'est qu'un moyen parmis beaucoup d'autres.
 - [ ] Les balises [meta](https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta)
       (notamment `description`, `author` et `keywords`) sont renseignées dans le
       `<head>` de la page HTML
-- [x] Le titre de la page (`<title>`) affiche un texte avec la date (par exemple
+- [ ] Le titre de la page (`<title>`) affiche un texte avec la date (par exemple
       "Kata APOD 2024-09-10")
 
 ### Bonus
@@ -115,6 +115,9 @@ n'est qu'un moyen parmis beaucoup d'autres.
   Angular CLI version 12.2.6
 
 - [@Jch4ipas](https://github.com/Jch4ipas): [code](https://github.com/Jch4ipas/kata-APOD) / [app](https://jch4ipas.github.io/kata-APOD/)  
+  Vanilla JS
+
+-[@XPL0Z](https://github.com/XPL0Z): [code](https://github.com/XPL0Z/kata-APOD) / [app](https://XPL0Z.github.io/kata-APOD/)  
   Vanilla JS
 
 - [@octocat](https://github.com/octocat): [code](https://#) / [app](https://#)  
