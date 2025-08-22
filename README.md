@@ -12,7 +12,7 @@
 >
 >  - Réalisez le kata dans le langage de programmation de votre choix.
 >  - Ajoutez-vous à la liste des participants en proposant une [pull request].
->  - Partagez votre intérêt pour ce dépôten lui ajoutant une ⭐.
+>  - Partagez votre intérêt pour ce dépôt en lui ajoutant une ⭐.
 >  - Proposez des suggestions ou signalez des bugs en ouvrant une issue.
 >
 > Bonne lecture et bon code !
@@ -116,6 +116,9 @@ n'est qu'un moyen parmis beaucoup d'autres.
 
 - [@Jch4ipas](https://github.com/Jch4ipas): [code](https://github.com/Jch4ipas/kata-APOD) / [app](https://jch4ipas.github.io/kata-APOD/)  
   Vanilla JS
+
+- [@XPL0Z](https://github.com/XPL0Z): [code](https://github.com/XPL0Z/kata-APOD) / [app](https://XPL0Z.github.io/kata-APOD/)  
+  Vanilla JS  
 
 - [@octocat](https://github.com/octocat): [code](https://#) / [app](https://#)  
   Une petite présentation de votre version, par exemple quelles technologies
